@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <%- include ('partials/head.html') %>
+    
+    <!--CUSTOM CSS-->
+    <link rel="stylesheet" href="/css/contactos.css" />
+
+</head>
+<body>
+    <%- include ('partials/navbar.html') %>
+    <div class="container">
+        <h1 class="titulo_body"><%= titulo_body %></h1>
+        <form>
+            <div class="input">
+                <label for="nombre">Nombre</label>
+                <input type="text">
+            </div>
+            <div class="input">
+                <label for="correo">Correo</label>
+                <input type="email">
+            </div>
+            <div class="input">
+                <label for="telefono">Telefono</label>
+                <input type="text">
+            </div>
+            <div class="input">
+                <label for="comentario">Comentario</label>
+                <textarea name="comentario" id=""></textarea>
+            </div>
+            <input class="btn-enviar" type="submit">   
+        </form>
+    </div>
+    <%- include ('partials/foot.html')%>
+    
+</body>
+</html>
